@@ -1,0 +1,65 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#voucher-container {
+    position: relative;
+    
+    aspect-ratio: 16 / 9;
+    
+    width: min(100vw, 177.77vh); /*Για 1920 x 950 */
+    
+    max-width: 1920px;
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+/* Background */
+#bg-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+    object-fit: cover; 
+    
+    pointer-events: none;
+    user-select: none;
+}
+
+.scratch-zone {
+    position: absolute;
+    /* Decrease to move up, Increase to move down */
+    top: 55.2%;  
+    
+    /* Decrease to move left, Increase to move right */
+    left: 51.0%; 
+    
+    width: 41.0%; 
+    
+    height: 37%;
+    border-radius: 60px; /* Matches the rounded corners */
+}
+
+
+#prize-image {
+    z-index: 5;
+    object-fit: cover;
+    
+}
+
+
+#scratch-canvas {
+    z-index: 10; 
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewport="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>') 12 12, auto; 
+    touch-action: none; /* critical for tablets */
+}
