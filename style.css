@@ -44,10 +44,10 @@ body, html {
     /* Decrease to move left, Increase to move right */
     left: 52.0%; 
     
-    width: 45.0%; 
+    width: 45.5%; 
     
-    height: 40.0%;
-    border-radius: 70px; /* Matches the rounded corners */
+    height: 41.0%;
+    border-radius: 50px; /* Matches the rounded corners */
 }
 
 
