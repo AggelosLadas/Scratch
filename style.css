@@ -39,15 +39,15 @@ body, html {
 .scratch-zone {
     position: absolute;
     /* Decrease to move up, Increase to move down */
-    top: 55.2%;  
+    top: 56.5%;  
     
     /* Decrease to move left, Increase to move right */
-    left: 51.0%; 
+    left: 52.0%; 
     
-    width: 41.0%; 
+    width: 45.0%; 
     
-    height: 37%;
-    border-radius: 60px; /* Matches the rounded corners */
+    height: 40.0%;
+    border-radius: 70px; /* Matches the rounded corners */
 }
 
 
